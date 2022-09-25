@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'BM Yeonsung';
+  font-family: 'BM Yeonsung', cursive;
   color: #272829;
 }
 
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "BM Yeonsung";
+  font-family: "BM Yeonsung", cursive;
 }
 
 /*--------------------------------------------------------------
