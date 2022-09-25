@@ -1,0 +1,17 @@
+# Etc
+.git/
+venv/
+
+# IntelliJ
+.idea/
+out/
+target/
+**/build/
+.gradle
+
+# Scala
+*.class
+*.log
+*.sc
+
+keytab
