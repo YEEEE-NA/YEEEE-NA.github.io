@@ -125,6 +125,11 @@
     }
   });
 
+  history.pushState(null, null, location.href);
+  window.onpopstate = function(event) {
+    window.history.back();
+  };
+
   /**
    * Hero type effect
    */
