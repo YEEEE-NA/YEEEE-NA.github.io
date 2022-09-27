@@ -127,7 +127,11 @@
 
   history.pushState(null, null, location.href);
   window.onpopstate = function(event) {
-    window.history.back();
+    // var btn = document.getElementsByClassName("gclose gbtn")[0];
+    var el = document.getElementsByClassName('gclose gbtn')
+    for (var i=0;i<el.length; i++) {
+      el[i].click();
+    }
   };
 
   /**
