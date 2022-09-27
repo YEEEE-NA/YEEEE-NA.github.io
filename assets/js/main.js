@@ -132,6 +132,7 @@
     for (var i=0;i<el.length; i++) {
       el[i].click();
     }
+    history.pushState(null, null, location.href);
   };
 
   /**
