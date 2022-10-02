@@ -144,17 +144,31 @@
     }
   });
 
-  history.pushState(null, null, location.href);
+  window.history.pushState({page: 1}, "", "");
   window.onpopstate = function(event) {
-    // var btn = document.getElementsByClassName("gclose gbtn")[0];
-    var el = document.getElementsByClassName('gclose');
-    console.log(el.length)
-    console.log(el)
-    for (var i=0;i<el.length; i++) {
-      el[i].click();
+    if(event){
+      var el = document.getElementsByClassName('gclose');
+      console.log(el.length)
+      console.log(el)
+      for (var i=0;i<el.length; i++) {
+        el[i].click();
+      }
     }
-    // history.pushState(null, null, location.href);
+    else{
+      window.history.pushState({page: 1}, "", "");
+    }
   };
+  // history.pushState(null, null, location.href);
+  // window.onpopstate = function(event) {
+  //   // var btn = document.getElementsByClassName("gclose gbtn")[0];
+  //   var el = document.getElementsByClassName('gclose');
+  //   console.log(el.length)
+  //   console.log(el)
+  //   for (var i=0;i<el.length; i++) {
+  //     el[i].click();
+  //   }
+  //   // history.pushState(null, null, location.href);
+  // };
 
   /**
    * Hero type effect
