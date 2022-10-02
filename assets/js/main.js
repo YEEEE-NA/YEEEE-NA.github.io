@@ -144,30 +144,28 @@
     }
   });
 
-  function onLoad() {    
-    document.addEventListener("deviceready", onDeviceReady, false);
-  }
 
-  function onDeviceReady() {   
-    document.addEventListener("backbutton", onBackKeyDown, false);
-  }
+  var checkPageShow = false;
+  window.onpageshow = function (event) {
+    checkPageShow = true;
 
-  function onBackKeyDown() {
-    var el = document.getElementsByClassName('gclose');
-    console.log(el.length)
-    console.log(el)
-    for (var i=0;i<el.length; i++) {
-      el[i].click();
+    if(event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+      var el = document.getElementsByClassName('gclose');
+      console.log(el.length)
+      console.log(el)
+      for (var i=0;i<el.length; i++) {
+        el[i].click();
+      }
     }
-    navigator.notification.confirm('종료하시겠습니까?', onBackKeyDownMsg, '종료', '취소, 종료');
-  }
 
-  function onBackKeyDownMsg() {   
-    if(button == 2) {       
-      navigator.app.exitApp();   
-    }
-  }
+  };
 
+  // window.onpagehide = function (event) {
+  //   if((window.performance.navigation.type == 0 || window.performance.navigation.type == 2) && checkPageShow) {
+  //
+  //   }
+  //
+  // }
 
   // window.history.pushState({page: 1}, "", "");
   // window.onpopstate = function(event) {
