@@ -144,7 +144,7 @@
     }
   });
 
-  // history.pushState(null, null, location.href);
+  history.pushState(null, null, location.href);
   window.onpopstate = function(event) {
     // var btn = document.getElementsByClassName("gclose gbtn")[0];
     var el = document.getElementsByClassName('gclose');
