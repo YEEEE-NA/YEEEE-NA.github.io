@@ -144,10 +144,12 @@
     }
   });
 
-  history.pushState(null, null, location.href);
+  // history.pushState(null, null, location.href);
   window.onpopstate = function(event) {
     // var btn = document.getElementsByClassName("gclose gbtn")[0];
-    var el = document.getElementsByClassName('gclose gbtn')
+    var el = document.getElementsByClassName('gclose');
+    console.log(el.length)
+    console.log(el)
     for (var i=0;i<el.length; i++) {
       el[i].click();
     }
