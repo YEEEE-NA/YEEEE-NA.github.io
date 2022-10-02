@@ -91,10 +91,10 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
+    select('body').classList.toggle('mobile-nav-active');
+    this.classList.toggle('bi-list');
     this.classList.toggle('bi-x')
-  })
+  });
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -103,16 +103,35 @@
     if (select(this.hash)) {
       e.preventDefault()
 
-      let body = select('body')
+      let body = select('body');
       if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
+        body.classList.remove('mobile-nav-active');
+        let navbarToggle = select('.mobile-nav-toggle');
+        navbarToggle.classList.toggle('bi-list');
         navbarToggle.classList.toggle('bi-x')
       }
       scrollto(this.hash)
     }
-  }, true)
+  }, true);
+
+  on('click', '.account_number', function(e) {
+    const textClass = document.getElementsByClassName('account_number');
+    for (var i=0;i<el.length; i++) {
+      console.log(el[i].classNames)
+    }
+
+
+
+    // const text = document.getElementsByClassName('account_number');
+    // const textarea = document.createElement('textarea');
+    // textarea.textContent = text;
+    // document.body.append(textarea);
+    // textarea.select();
+    // document.execCommand('copy');
+    // textarea.remove();
+    //
+    // alert("copy" + text)
+  });
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -132,7 +151,7 @@
     for (var i=0;i<el.length; i++) {
       el[i].click();
     }
-    history.pushState(null, null, location.href);
+    // history.pushState(null, null, location.href);
   };
 
   /**
