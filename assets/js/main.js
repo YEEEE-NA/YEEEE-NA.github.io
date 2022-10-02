@@ -144,20 +144,45 @@
     }
   });
 
-  window.history.pushState({page: 1}, "", "");
-  window.onpopstate = function(event) {
-    if(event){
-      var el = document.getElementsByClassName('gclose');
-      console.log(el.length)
-      console.log(el)
-      for (var i=0;i<el.length; i++) {
-        el[i].click();
-      }
+  function onLoad() {    
+    document.addEventListener("deviceready", onDeviceReady, false);
+  }
+
+  function onDeviceReady() {   
+    document.addEventListener("backbutton", onBackKeyDown, false);
+  }
+
+  function onBackKeyDown() {
+    var el = document.getElementsByClassName('gclose');
+    console.log(el.length)
+    console.log(el)
+    for (var i=0;i<el.length; i++) {
+      el[i].click();
     }
-    else{
-      window.history.pushState({page: 1}, "", "");
+    // navigator.notification.confirm('종료하시겠습니까?', onBackKeyDownMsg, '종료', '취소, 종료');
+  }
+
+  function onBackKeyDownMsg() {   
+    if(button == 2) {       
+      navigator.app.exitApp();   
     }
-  };
+  }
+
+
+  // window.history.pushState({page: 1}, "", "");
+  // window.onpopstate = function(event) {
+  //   if(event){
+  //     var el = document.getElementsByClassName('gclose');
+  //     console.log(el.length)
+  //     console.log(el)
+  //     for (var i=0;i<el.length; i++) {
+  //       el[i].click();
+  //     }
+  //   }
+  //   else{
+  //     window.history.pushState({page: 1}, "", "");
+  //   }
+  // };
   // history.pushState(null, null, location.href);
   // window.onpopstate = function(event) {
   //   // var btn = document.getElementsByClassName("gclose gbtn")[0];
