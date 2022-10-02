@@ -159,7 +159,7 @@
     for (var i=0;i<el.length; i++) {
       el[i].click();
     }
-    // navigator.notification.confirm('종료하시겠습니까?', onBackKeyDownMsg, '종료', '취소, 종료');
+    navigator.notification.confirm('종료하시겠습니까?', onBackKeyDownMsg, '종료', '취소, 종료');
   }
 
   function onBackKeyDownMsg() {   
