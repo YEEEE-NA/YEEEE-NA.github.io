@@ -133,65 +133,9 @@
     // alert("copy" + text)
   });
 
-  // /**
-  //  * Scroll with ofset on page load with hash links in the url
-  //  */
-  // window.addEventListener('load', () => {
-  //   if (window.location.hash) {
-  //     if (select(window.location.hash)) {
-  //       scrollto(window.location.hash)
-  //     }
-  //   }
-  // });
-  //
-  //
-  // var checkPageShow = false;
-  // window.onpageshow = function (event) {
-  //   checkPageShow = true;
-  //
-  //   if(event.persisted || (window.performance && window.performance.navigation.type == 2)) {
-  //     var el = document.getElementsByClassName('gclose');
-  //     console.log(el.length)
-  //     console.log(el)
-  //     for (var i=0;i<el.length; i++) {
-  //       el[i].click();
-  //     }
-  //   }
-  //
-  // };
 
-  // window.onpagehide = function (event) {
-  //   if((window.performance.navigation.type == 0 || window.performance.navigation.type == 2) && checkPageShow) {
-  //
-  //   }
-  //
-  // }
-
-  // window.history.pushState({page: 1}, "", "");
-  // window.onpopstate = function(event) {
-  //   if(event){
-  //     var el = document.getElementsByClassName('gclose');
-  //     console.log(el.length)
-  //     console.log(el)
-  //     for (var i=0;i<el.length; i++) {
-  //       el[i].click();
-  //     }
-  //   }
-  //   else{
-  //     window.history.pushState({page: 1}, "", "");
-  //   }
-  // };
-  // history.pushState(null, null, location.href);
-  // window.onpopstate = function(event) {
-  //   // var btn = document.getElementsByClassName("gclose gbtn")[0];
-  //   var el = document.getElementsByClassName('gclose');
-  //   console.log(el.length)
-  //   console.log(el)
-  //   for (var i=0;i<el.length; i++) {
-  //     el[i].click();
-  //   }
-  //   // history.pushState(null, null, location.href);
-  // };
+  window.history.forward();
+  function noBack(){window.history.forward();}
 
   /**
    * Hero type effect

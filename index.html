@@ -37,7 +37,7 @@
 
 </head>
 
-<body>
+<body onload="noBack();" onpageshow="if(event.persisted) noBack();">
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
@@ -71,11 +71,6 @@
                       <li><i class="bi bi-chevron-right"></i><span>1992.09.04</span></li>
                     </ul>
                   </div>
-                  <div class="col-6">
-                    <ul>
-                      <li><i class="bi bi-chevron-right"></i><span>원숭이띠</span></li>
-                    </ul>
-                  </div>
                 </div>
                 <p>
                   How do you spell love? <br>
@@ -101,11 +96,6 @@
                       <li><i class="bi bi-chevron-right"></i><span>1993.04.23</span></li>
                     </ul>
                   </div>
-                  <div class="col-6">
-                    <ul>
-                      <li><i class="bi bi-chevron-right"></i><span>닭띠</span></li>
-                    </ul>
-                  </div>
                 </div>
                 <p>
                   Why can I laugh for no reason? <br>
@@ -125,8 +115,8 @@
     <section id="resume" class="resume">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h1 class="resume-title" style="color: #050d18">역사를 잊은 부부에겐 미래는 없다.</h1>
+          <h1 class="resume-title" style="color: #050d18">역사를 잊은 부부에겐 미래는 없다.</h1>
+          <div class="col-6" data-aos="fade-up">
             <div class="resume-item">
               <h3 style="font-family: 'Yeonsung2'; color: #173b6c">첫 만남</h3>
               <h5>2016.10.28 아주대</h5>
@@ -137,7 +127,7 @@
               <br>
             </div>
             <div class="resume-item">
-              <h3 style="font-family: 'Yeonsung2'; color: #173b6c">고난과 역경을 이겨내고 재회</h3>
+              <h3 style="font-family: 'Yeonsung2'; color: #173b6c">포차사랑</h3>
               <h5>2017.03.18 구디</h5>
               <p>구디에서 저녁만 랜덤으로 오픈하는 포장마차, 닭발이 너무 매워서 순두부는 필수! 요즘엔 안 보이더라ㅠ</p>
               <div>
@@ -164,7 +154,7 @@
             </div>
             <br>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-6" data-aos="fade-up" data-aos-delay="100">
             <div class="resume-item">
               <h3 style="font-family: 'Yeonsung2'; color: #173b6c">환상적인 선셋바 여행</h3>
               <h5>2019.03.10 코타키나발루</h5>
@@ -175,7 +165,7 @@
               <br>
             </div>
             <div class="resume-item">
-              <h3 style="font-family: 'Yeonsung2'; color: #173b6c">20대 마지막 내일로 기차여행</h3>
+              <h3 style="font-family: 'Yeonsung2'; color: #173b6c">마지막 내일로 기차여행</h3>
               <h5>2020.02.01 전주</h5>
               <p>시장에서 모주 시음했다가 맛있어서 각 1병씩 마신 날, 아주머니가 불빛 나는 빨대도 하나씩 챙겨주셨다 ㅎ.ㅎ</p>
               <div>
@@ -226,76 +216,201 @@
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/1.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/8.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/0.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/0.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-drink">
-            <img src="assets/img/photo/drink/3.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/8.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/8.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/2.png" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-drink">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/drink/3.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/drink/3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-drink">
-            <img src="assets/img/photo/drink/5.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/2.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/0.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-drink">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/drink/5.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/drink/5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/11.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/6.png" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/11.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/11.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-drink">
-            <img src="assets/img/photo/drink/7.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/6.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/6.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-drink">
-            <img src="assets/img/photo/drink/16.jpg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-drink">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/drink/7.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/drink/7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/9.png" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-drink">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/drink/16.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/drink/16.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/12.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/9.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/9.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/18.jpg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/12.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/12.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/10.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/18.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/18.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-drink">
-            <img src="assets/img/photo/drink/17.jpg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/10.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/10.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/19.jpg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-drink">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/drink/17.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/drink/17.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/13.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/19.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/19.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/14.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/13.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/13.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/20.PNG" class="img-fluid">
+
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/14.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/14.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-train">
-            <img src="assets/img/photo/train/21.JPG" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/20.PNG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/20.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-drink">
-            <img src="assets/img/photo/drink/22.JPG" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-train">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/train/21.JPG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/train/21.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/15.jpeg" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-drink">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/drink/22.JPG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/drink/22.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 col-4 portfolio-item filter-street">
-            <img src="assets/img/photo/street/23.PNG" class="img-fluid">
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/15.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/15.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 col-6 portfolio-item filter-street">
+            <div class="portfolio-wrap">
+              <img src="assets/img/photo/street/23.PNG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/photo/street/23.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -427,7 +542,7 @@
 <!--  <script src="assets/vendor/php-email-form/validate.js"></script>-->
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js?version=1.0.1"></script>
+  <script src="assets/js/main.js?version=1.0.2"></script>
 
 </body>
 
