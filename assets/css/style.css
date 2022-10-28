@@ -42,6 +42,48 @@ h6 {
   font-family: "Yeonsung2", cursive;
 }
 
+/*body::after{*/
+/*  position:absolute;*/
+/*  width:0;*/
+/*  height:0;*/
+/*  overflow:hidden;*/
+/*  z-index:-1;*/
+
+/*  !* load images *!*/
+/*  content:*/
+/*          url(../../assets/img/history/1.jpeg)*/
+/*          url(../../assets/img/history/3.png)*/
+/*          url(../../assets/img/history/4.jpeg)*/
+/*          url(../../assets/img/history/6.jpeg)*/
+/*          url(../../assets/img/history/9.png)*/
+/*          url(../../assets/img/history/12.png)*/
+/*          url(../../assets/img/photo/0.jpeg)*/
+/*          url(../../assets/img/photo/1.jpeg)*/
+/*          url(../../assets/img/photo/2.jpeg)*/
+/*          url(../../assets/img/photo/3.jpeg)*/
+/*          url(../../assets/img/photo/4.jpeg)*/
+/*          url(../../assets/img/photo/5.jpeg)*/
+/*          url(../../assets/img/photo/7.jpeg)*/
+/*          url(../../assets/img/photo/8.jpeg)*/
+/*          url(../../assets/img/photo/10.jpeg)*/
+/*          url(../../assets/img/photo/11.jpeg)*/
+/*          url(../../assets/img/photo/12.jpeg)*/
+/*          url(../../assets/img/photo/13.jpeg)*/
+/*          url(../../assets/img/photo/14.jpeg)*/
+/*          url(../../assets/img/photo/15.jpeg)*/
+/*          url(../../assets/img/photo/2.png)*/
+/*          url(../../assets/img/photo/6.png)*/
+/*          url(../../assets/img/photo/9.png)*/
+/*          url(../../assets/img/photo/16.jpg)*/
+/*          url(../../assets/img/photo/17.jpg)*/
+/*          url(../../assets/img/photo/18.jpg)*/
+/*          url(../../assets/img/photo/19.jpg)*/
+/*          url(../../assets/img/photo/20.png)*/
+/*          url(../../assets/img/photo/21.jpg)*/
+/*          url(../../assets/img/photo/22.jpg)*/
+/*          url(../../assets/img/photo/23.png);*/
+/*}*/
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -256,17 +298,17 @@ h6 {
 }
 
 #hero .hero-container {
-  position: relative;
-  z-index: 2;
-  min-width: 300px;
+  position: relative; !important;
+  z-index: 2; !important;
+  min-width: 300px; !important;
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
+  margin: 0 0 10px 0; !important;
+  font-size: 64px; !important;
+  font-weight: 700; !important;
+  line-height: 56px; !important;
+  color: #fff; !important;
 }
 
 #hero p {
