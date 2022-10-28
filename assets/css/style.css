@@ -304,11 +304,11 @@ body::after{
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
+  margin: 0 0 10px 0; !important;
+  font-size: 64px; !important;
+  font-weight: 700; !important;
+  line-height: 56px; !important;
+  color: #fff; !important;
 }
 
 #hero p {
