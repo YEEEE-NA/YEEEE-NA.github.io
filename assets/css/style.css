@@ -42,6 +42,43 @@ h6 {
   font-family: "Yeonsung2", cursive;
 }
 
+body::after{
+  /* 소스만 다운받고 화면은 나태내지 않는다. (숨김 처리) */
+  position:absolute;
+  width:0;
+  height:0;
+  overflow:hidden;
+  z-index:-1;
+
+  /* load images */
+  content:
+          url(../../assets/img/photo/0.jpeg)
+          url(../../assets/img/photo/1.jpeg)
+          url(../../assets/img/photo/2.jpeg)
+          url(../../assets/img/photo/3.jpeg)
+          url(../../assets/img/photo/4.jpeg)
+          url(../../assets/img/photo/5.jpeg)
+          url(../../assets/img/photo/7.jpeg)
+          url(../../assets/img/photo/8.jpeg)
+          url(../../assets/img/photo/10.jpeg)
+          url(../../assets/img/photo/11.jpeg)
+          url(../../assets/img/photo/12.jpeg)
+          url(../../assets/img/photo/13.jpeg)
+          url(../../assets/img/photo/14.jpeg)
+          url(../../assets/img/photo/15.jpeg)
+          url(../../assets/img/photo/2.png)
+          url(../../assets/img/photo/6.png)
+          url(../../assets/img/photo/9.png)
+          url(../../assets/img/photo/16.jpg)
+          url(../../assets/img/photo/17.jpg)
+          url(../../assets/img/photo/18.jpg)
+          url(../../assets/img/photo/19.jpg)
+          url(../../assets/img/photo/20.png)
+          url(../../assets/img/photo/21.jpg)
+          url(../../assets/img/photo/22.jpg)
+          url(../../assets/img/photo/23.png);
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
