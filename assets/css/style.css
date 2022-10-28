@@ -52,6 +52,12 @@ body::after{
 
   /* load images */
   content:
+          url(../../assets/img/history/1.jpeg)
+          url(../../assets/img/history/3.png)
+          url(../../assets/img/history/4.jpeg)
+          url(../../assets/img/history/6.jpeg)
+          url(../../assets/img/history/9.png)
+          url(../../assets/img/history/12.png)
           url(../../assets/img/photo/0.jpeg)
           url(../../assets/img/photo/1.jpeg)
           url(../../assets/img/photo/2.jpeg)
