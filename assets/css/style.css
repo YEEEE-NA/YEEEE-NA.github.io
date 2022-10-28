@@ -298,9 +298,9 @@ body::after{
 }
 
 #hero .hero-container {
-  position: relative;
-  z-index: 2;
-  min-width: 300px;
+  position: relative; !important;
+  z-index: 2; !important;
+  min-width: 300px; !important;
 }
 
 #hero h1 {
