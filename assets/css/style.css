@@ -42,48 +42,6 @@ h6 {
   font-family: "Yeonsung2", cursive;
 }
 
-/*body::after{*/
-/*  position:absolute;*/
-/*  width:0;*/
-/*  height:0;*/
-/*  overflow:hidden;*/
-/*  z-index:-1;*/
-
-/*  !* load images *!*/
-/*  content:*/
-/*          url(../../assets/img/history/1.jpeg)*/
-/*          url(../../assets/img/history/3.png)*/
-/*          url(../../assets/img/history/4.jpeg)*/
-/*          url(../../assets/img/history/6.jpeg)*/
-/*          url(../../assets/img/history/9.png)*/
-/*          url(../../assets/img/history/12.png)*/
-/*          url(../../assets/img/photo/0.jpeg)*/
-/*          url(../../assets/img/photo/1.jpeg)*/
-/*          url(../../assets/img/photo/2.jpeg)*/
-/*          url(../../assets/img/photo/3.jpeg)*/
-/*          url(../../assets/img/photo/4.jpeg)*/
-/*          url(../../assets/img/photo/5.jpeg)*/
-/*          url(../../assets/img/photo/7.jpeg)*/
-/*          url(../../assets/img/photo/8.jpeg)*/
-/*          url(../../assets/img/photo/10.jpeg)*/
-/*          url(../../assets/img/photo/11.jpeg)*/
-/*          url(../../assets/img/photo/12.jpeg)*/
-/*          url(../../assets/img/photo/13.jpeg)*/
-/*          url(../../assets/img/photo/14.jpeg)*/
-/*          url(../../assets/img/photo/15.jpeg)*/
-/*          url(../../assets/img/photo/2.png)*/
-/*          url(../../assets/img/photo/6.png)*/
-/*          url(../../assets/img/photo/9.png)*/
-/*          url(../../assets/img/photo/16.jpg)*/
-/*          url(../../assets/img/photo/17.jpg)*/
-/*          url(../../assets/img/photo/18.jpg)*/
-/*          url(../../assets/img/photo/19.jpg)*/
-/*          url(../../assets/img/photo/20.png)*/
-/*          url(../../assets/img/photo/21.jpg)*/
-/*          url(../../assets/img/photo/22.jpg)*/
-/*          url(../../assets/img/photo/23.png);*/
-/*}*/
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -244,6 +202,35 @@ h6 {
   color: #149ddd;
 }
 
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
