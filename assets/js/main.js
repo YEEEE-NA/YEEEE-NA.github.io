@@ -116,7 +116,7 @@
   }, true);
 
   on('click', '.account-number', function(e) {
-    const accountId = e.target.classList[3]
+    const accountId = e.currentTarget.classList[2];
 
     const text = document.getElementById(accountId).textContent;
     window.navigator.clipboard.writeText(text).then(() => {
