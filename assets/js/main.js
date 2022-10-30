@@ -119,13 +119,9 @@
     const accountId = e.target.classList[3]
 
     const text = document.getElementById(accountId).textContent;
-    const textarea = document.createElement('textarea');
-    textarea.textContent = text;
-    document.body.append(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    textarea.remove();
-    alert("계좌번호가 복사되었습니다.")
+    window.navigator.clipboard.writeText(text).then(() => {
+      alert("계좌번호가 복사되었습니다.");
+    });
   }, true);
 
 
