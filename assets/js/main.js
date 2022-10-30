@@ -115,24 +115,18 @@
     }
   }, true);
 
-  on('click', '.account_number', function(e) {
-    const textClass = document.getElementsByClassName('account_number');
-    for (var i=0;i<el.length; i++) {
-      console.log(el[i].classNames)
-    }
+  on('click', '.account-number', function(e) {
+    const accountId = e.target.classList[3]
 
-
-
-    // const text = document.getElementsByClassName('account_number');
-    // const textarea = document.createElement('textarea');
-    // textarea.textContent = text;
-    // document.body.append(textarea);
-    // textarea.select();
-    // document.execCommand('copy');
-    // textarea.remove();
-    //
-    // alert("copy" + text)
-  });
+    const text = document.getElementById(accountId).textContent;
+    const textarea = document.createElement('textarea');
+    textarea.textContent = text;
+    document.body.append(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+    alert("계좌번호가 복사되었습니다.")
+  }, true);
 
 
   // window.history.forward();
@@ -266,4 +260,5 @@
     })
   });
 
-})()
+
+})();
